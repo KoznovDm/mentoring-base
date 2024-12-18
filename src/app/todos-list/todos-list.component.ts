@@ -26,9 +26,7 @@ export class TodosListComponent {
   private snackBar = inject(MatSnackBar);
   public readonly todos$ = this.store.select(selectTodos);
   readonly todosApiService = inject(TodosApiService);
-  
-  @Input() 
-    readonly dialog = inject(MatDialog)
+  readonly dialog = inject(MatDialog)
   
  
   constructor() {

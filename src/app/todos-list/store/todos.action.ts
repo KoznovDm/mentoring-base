@@ -7,6 +7,6 @@ export const TodosActions = createActionGroup ({
         'set': props<{todos: Todo[]}>(),
         'edit': props<{todo: Todo}>(),
         'create': props<{todo: Todo}>(),
-        'delete': props<{ id: number }>(),
+        'delete': props<{id: number}>(),
     }
 })
